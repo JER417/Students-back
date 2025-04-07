@@ -1,8 +1,4 @@
-// Cambia esto:
-import { connectDB } from '@/lib/db';
-import Student from '@/models/Student';
 
-// Por esto:
 import { connectDB } from '../../../lib/db';
 import Student from '../../../models/Student';
 export async function GET() {
@@ -22,7 +18,6 @@ export async function GET() {
   }
 }
 
-// También podemos implementar POST, PUT, DELETE si es necesario
 export async function POST(request) {
   try {
     const body = await request.json();
