@@ -1,7 +1,10 @@
-import { NextResponse } from 'next/server';
+// Cambia esto:
 import { connectDB } from '@/lib/db';
 import Student from '@/models/Student';
 
+// Por esto:
+import { connectDB } from '../../../lib/db';
+import Student from '../../../models/Student';
 export async function GET() {
   try {
     await connectDB();
